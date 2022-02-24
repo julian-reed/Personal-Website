@@ -44,39 +44,47 @@
 .main {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 62vh;
 }
 
 .top_row {
     display: flex;
     flex-direction: row;
+    height: 30vh;
 }
 
-.text_about_me {
+.about_me {
     background-color: #006ddb;
-    width: max-content;
-    height: max-content;
+    width: 50vw;
+    text-align: center;
+    line-height: 25vh;
 }
 
-.text_projects {
+.projects {
     background-color: #fc780c;
-    width: max-content;
-    height: max-content;
+    width: 50vw;
+    text-align: center;
+    line-height: 25vh;
 }
 
 .bottom_row {
     display: flex;
     flex-direction: row;
+    height: 30vh;
 }
 
-.text_activities {
+.activities {
     background-color: #ff6666;
-    width: max-content;
-    height: max-content;
+    width: 50vw;
+    text-align: center;
+    line-height: 25vh;
 }
 
-.text_certifications {
+.certifications {
     background-color: #099e01;
+    width: 50vw;
+    text-align: center;
+    line-height: 25vh;
 }
 
 .hr {
@@ -84,12 +92,18 @@
     background-color: white;
     height: 7px;
     border: solid;
+    padding: 0px;
+    margin: 0px;
 }
 
 .vr {
     border-left: 1px;
     border: solid;
     height: auto;
+    padding: 0px;
+    margin: 0px;
+    width: 7px;
+    background-color: white;
 }
 
 .footer {

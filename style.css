@@ -26,16 +26,110 @@
     display: flex;
     flex-direction: row;
     margin: 20px;
+    margin-bottom: 10px;
     max-width: fit-content;
 }
 
 .Logo_Header {
     display: block;
-    width:150px;
-    height:120px;
+    width:110px;
+    height:80px;
 }
 
 .intro_blurb {
     font-size: 35px;
     margin-left: 60px;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.top_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_about_me {
+    background-color: #006ddb;
+    width: max-content;
+    height: max-content;
+}
+
+.text_projects {
+    background-color: #fc780c;
+    width: max-content;
+    height: max-content;
+}
+
+.bottom_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_activities {
+    background-color: #ff6666;
+    width: max-content;
+    height: max-content;
+}
+
+.text_certifications {
+    background-color: #099e01;
+}
+
+.hr {
+    border-color: white;
+    background-color: white;
+    height: 7px;
+    border: solid;
+}
+
+.vr {
+    border-left: 1px;
+    border: solid;
+    height: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.GithubLogo {
+    display: block;
+    width:50px;
+    height:50px;
+    padding-left: 25px;
+    padding-right: 12.5px;
+}
+
+.LinkedInLogo {
+    display: block;
+    width:50px;
+    height:50px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+
+.EmailIcon {
+    display: block;
+    width:50px;
+    height:50px;
+    padding-left: 12.5px;
+    padding-right: 25px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+  }

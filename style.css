@@ -1,11 +1,11 @@
 @font-face {
     font-family: "U8";
-    src: url("U8-Regular.woff") format('woff');
+    src: url("Fonts/U8-Regular.woff") format('woff');
 }
 
 @font-face {
     font-family: "U8-alt";
-    src: url("U8-Alternate.woff") format('woff');
+    src: url("Fonts/U8-Alternate.woff") format('woff');
 }
 
 .body {

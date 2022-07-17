@@ -8,9 +8,16 @@
     src: url("Fonts/U8-Alternate.woff") format('woff');
 }
 
+:root {
+    --mediasize: 40px;
+    --background-color: #ffffff;
+    --alt-background-color: #000000;
+    --typing-speed: 4.75s;
+}
+
 .body {
     background-color: black;
-    color: white;
+    color: var(--background-color);
     font-family: 'U8-alt', "Comic Sans MS",Helvetica,Arial,sans-serif;
     font-weight: 100;
 }
@@ -27,6 +34,7 @@
     flex-direction: row;
     margin: 20px;
     margin-bottom: 10px;
+    height: 17vh;
     max-width: fit-content;
 }
 
@@ -36,15 +44,55 @@
     height:80px;
 }
 
-.intro_blurb {
+h2 {
     font-size: 35px;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 90vw;
+    display: block;
+    text-align: right;
+    position: relative;
+}
+
+h2::before, h2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h2::before {
+    background-color: var(--alt-background-color);
+    animation: 
+        typing var(--typing-speed) steps(39) forwards;
+}
+
+h2::after {
+    width: 0.125px;
+    background-color: var(--background-color);
+    animation: 
+        typing var(--typing-speed) steps(39) forwards,
+        blinking 750ms steps(39) infinite;
+}
+
+@keyframes typing {
+    from {left: 30%;}
+    to { left: 100%;}
+}
+
+@keyframes blinking {
+    to {
+        background: transparent;
+    }
 }
 
 .main {
     display: flex;
     flex-direction: column;
     height: 62vh;
+    overflow: auto;
 }
 
 .top_row {
@@ -54,14 +102,14 @@
 }
 
 .about_me {
-    background-color: #006ddb;
+    background-color: #0252e8;
     width: 50vw;
     text-align: center;
     line-height: 25vh;
 }
 
 .projects {
-    background-color: #fc780c;
+    background-color: #ba5300;
     width: 50vw;
     text-align: center;
     line-height: 25vh;
@@ -74,22 +122,22 @@
 }
 
 .activities {
-    background-color: #ff6666;
+    background-color: #c40101;
     width: 50vw;
     text-align: center;
     line-height: 25vh;
 }
 
 .certifications {
-    background-color: #099e01;
+    background-color: #177001;
     width: 50vw;
     text-align: center;
     line-height: 25vh;
 }
 
 .hr {
-    border-color: white;
-    background-color: white;
+    border-color: var(--background-color);
+    background-color: var(--background-color);
     height: 7px;
     border: solid;
     padding: 0px;
@@ -103,7 +151,7 @@
     padding: 0px;
     margin: 0px;
     width: 7px;
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .footer {
@@ -119,31 +167,31 @@
     margin-top: 5px;
 }
 
-.GithubLogo {
+.github_logo {
     display: block;
-    width:50px;
-    height:50px;
+    width:var(--mediasize);
+    height:var(--mediasize);
     padding-left: 25px;
     padding-right: 12.5px;
 }
 
-.LinkedInLogo {
+.linkedIn_logo {
     display: block;
-    width:50px;
-    height:50px;
+    width:var(--mediasize);
+    height:var(--mediasize);
     padding-left: 12.5px;
     padding-right: 12.5px;
 }
 
-.EmailIcon {
+.email_icon {
     display: block;
-    width:50px;
-    height:50px;
+    width:var(--mediasize);
+    height:var(--mediasize);
     padding-left: 12.5px;
     padding-right: 25px;
 }
 
 a:link, a:visited {
-    color: white;
+    color: var(--background-color);
     text-decoration: none;
   }

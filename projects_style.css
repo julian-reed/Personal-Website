@@ -28,6 +28,7 @@
     flex-direction: row;
     margin: 20px;
     margin-bottom: 10px;
+    height: 17vh;
     max-width: fit-content;
 }
 
@@ -39,16 +40,22 @@
 
 .intro_blurb {
     font-size: 35px;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 20px;
+    width: 90vw;
+    display: block;
+    text-align: right;
+    position: relative;
 }
 
 .main {
-    background-color: #fc780c;
+    background-color: #ba5300;
     display: flex;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
-    height: 60vh;
+    height: 62vh;
+    overflow: auto;
 }
 
 .main_header {
@@ -92,29 +99,29 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.GithubLogo {
+.github_logo {
     display: block;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     padding-left: 25px;
     padding-right: 12.5px;
 }
 
-.LinkedInLogo {
+.linkedIn_logo {
     display: block;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     padding-left: 12.5px;
     padding-right: 12.5px;
 }
 
-.EmailIcon {
+.email_icon {
     display: block;
-    width:50px;
-    height:50px;
+    width:40px;
+    height:40px;
     padding-left: 12.5px;
     padding-right: 25px;
 }
